@@ -13,6 +13,8 @@ The server listens for client requests and establishes connections using sockets
 Communication:
 Once connected, the client and server exchange data over the established TCP connection.
 
+JMETER TEST RESULTS , TCP SAMPLER 50,000 to 1,00,000 rpm(requests per minute)
+
 
 ![Screenshot 2024-12-18 232450](https://github.com/user-attachments/assets/da9b2500-43ce-4259-9118-32ce5daa8ce7)
 
