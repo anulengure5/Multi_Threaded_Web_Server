@@ -3,7 +3,9 @@ Java TCP Server: Single-Threaded, Multi-Threaded, Thread-Pooled
 This project implements a TCP Server that handles client connections using three concurrency models:
 
 Single-Threaded: Processes one client connection at a time.
+
 Multi-Threaded: Spawns a new thread for each client connection.
+
 Thread-Pooled: Utilizes a fixed pool of threads to efficiently manage multiple client connections.
 
 How It Works
