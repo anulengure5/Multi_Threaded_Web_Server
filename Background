@@ -1,0 +1,37 @@
+Lovepreet Singh ,
+a multi threaded web server handles multiple concurrent web requests at once , of course it will have to be Multi core
+processor .
+
+
+Client Server Connection establishment for data transfer via HTTP  ( DNS domain name resolution  etc) with 3-way TCP handshake - 1. SYN 2. SYN-ACK 3. ACK
+
+http 1.0  vs 1.1 (persistent i.e. connection open till time out.
+
+
+SOCKET : ip+ port
+
+client 1 Socket --> Server Socket 1
+                   socket1 listen()
+                   socket2 accept() from Client1
+
+   Any other client puts in request on to server and server is single thread , i.e. it cannot accept or else context switch based on scheduling algo
+   but only one at a time.
+
+ if multi threaded
+  continued from above
+
+  client 2 , 3 , ... other client request can be handled too by server at same time , thus better efficiency and time
+
+  Drawback
+  10,000 rps (requests per second)
+  (client count requesting server)
+
+  therefore 10,000 thread blocks will be required/created and this will actively consume humungous amount of compute resource
+
+  solution : Thread pool - limiting thread count and resources
+              fixed no. of threads are created and a scheduling for requests with a queue is done . this helps limit simultaneous requests to be handled
+
+              javascript - event loop
+
+              vs thread pool
+
