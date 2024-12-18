@@ -8,6 +8,7 @@ Multi-Threaded: Spawns a new thread for each client connection.
 
 Thread-Pooled: Utilizes a fixed pool of threads to efficiently manage multiple client connections.
 
+
 How It Works
 Connection Establishment:
 The server listens for client requests and establishes connections using sockets (IP:Port).
@@ -17,7 +18,7 @@ Once connected, the client and server exchange data over the established TCP con
 
 
 
-JMETER TEST RESULTS , TCP SAMPLER 50,000 to 1,00,000 rpm(requests per minute)
+---------------JMETER TEST RESULTS , TCP SAMPLER 50,000 to 1,00,000 rpm(requests per minute)----------------
 
 
 ![Screenshot 2024-12-18 232450](https://github.com/user-attachments/assets/da9b2500-43ce-4259-9118-32ce5daa8ce7)
